@@ -12,22 +12,33 @@
         crossorigin="anonymous"></script>
     <script src="/index.js"></script>
     <title>Document</title>
+    <style>
+        input {
+            width: 70%;
+        }
+        div{
+            width: 80vw;
+            margin: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <center class="m-5 p-5 border border-danger border-2">
-        <input type="text" placeholder="Num1" id="user1">
-        <br>
-        <br>
-        <input type="text" placeholder="Num2" id="user2">
-        <br>
-        <br>
-        <button class="btn btn-outline-primary" onclick="clkadd()">Add</button>
-        <button class="btn btn-outline-success" onclick="clksub()">Subtract</button>
-        <button class="btn btn-outline-danger" onclick="clkmult()">Multiply</button>
-        <button class="btn btn-outline-warning" onclick="clkdivide()">Divide</button>
-        <button class="btn btn-outline-dark" onclick="clkreminder()">Reminder</button>
-    </center>
+    <div class="container mt-5 pt-5 pb-5 border border-danger border-2">
+        <center>
+            <input class="m-1" type="text" placeholder="Num1" id="user1">
+            <br>
+            <br>
+            <input class="m-1" type="text" placeholder="Num2" id="user2">
+            <br>
+            <br>
+            <button class="btn btn-primary mt-2 mb-2" onclick="clkadd()">Add</button>
+            <button class="btn btn-success mt-2 mb-2" onclick="clksub()">Subtract</button>
+            <button class="btn btn-danger mt-2 mb-2" onclick="clkmult()">Multiply</button>
+            <button class="btn btn-warning mt-2 mb-2" onclick="clkdivide()">Divission</button>
+            <button class="btn btn-dark mt-2 mb-2" onclick="clkreminder()">Reminder</button>
+        </center>
+    </div>
     <script>
 
 
