@@ -13,35 +13,46 @@
     <title>Document</title>
     <style>
         input {
-            width: 70%;
+            width: 40%;
         }
 
         div {
             width: 80vw;
             margin: auto;
         }
+
+        @media only screen and (max-width : 800px) {
+            input{
+                width: 70%;
+            } 
+        }
+
+
+
     </style>
 </head>
 
-<body>
-    <div class="container mt-5 pt-5 pb-5 border border-danger border-2">
+<body class="bg-dark text-white">
+    <div class="container mt-5 pt-5 pb-5 border border-danger border-5">
+       
         <center>
-            <input class="m-1" type="text" placeholder="Num1" id="user1">
+            <h1> Maths Function</h1>
+            <input class="m-1" type="text" placeholder="Enter 1st Numer" id="user1">
             <br>
             <br>
-            <input class="m-1" type="text" placeholder="Num2" id="user2">
+            <input class="m-1" type="text" placeholder="Enter 2nd Numer" id="user2">
             <br>
             <br>
-            <button class="btn btn-primary mt-2 mb-2" onclick="clkadd()">Add</button>
+            <button class="btn btn-primary mt-2 mb-2" onclick="clkadd()">Addition</button>
             <button class="btn btn-success mt-2 mb-2" onclick="clksub()">Subtract</button>
             <button class="btn btn-danger mt-2 mb-2" onclick="clkmult()">Multiply</button>
             <button class="btn btn-warning mt-2 mb-2" onclick="clkdivide()">Divission</button>
-            <button class="btn btn-dark mt-2 mb-2" onclick="clkreminder()">Reminder</button>
+            <button class="btn btn-info mt-2 mb-2" onclick="clkreminder()">Reminder</button>
             <br>
             <br>
             <div id="div" style="display :none">
             <h1>Your Answer is</h1>
-            <h1 class="text-danger bg-dark" id="answer"></h1>
+            <h1 class="text-light bg-danger" id="answer"></h1>
             </div>
 
         </center>
