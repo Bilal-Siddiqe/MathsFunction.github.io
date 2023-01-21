@@ -37,25 +37,42 @@
             <button class="btn btn-danger mt-2 mb-2" onclick="clkmult()">Multiply</button>
             <button class="btn btn-warning mt-2 mb-2" onclick="clkdivide()">Divission</button>
             <button class="btn btn-dark mt-2 mb-2" onclick="clkreminder()">Reminder</button>
+            <br>
+            <br>
+            <div id="div" style="display :none">
+            <h1>Your Answer is</h1>
+            <h1 class="text-danger bg-dark" id="answer"></h1>
+            </div>
+
         </center>
     </div>
     <script>
         let maths = {
             add: function (num1, num2) {
-                document.write("<center><br> Your Answer Is <br><br><br><br><b><i><h1>", num1 + num2, "</h1></i></b></center>")
+               let result =  num1 + num2
+               document.getElementById("div").style.display = "block"
+               document.getElementById("answer").innerHTML = result;
             },
             sub: function (num1, num2) {
-                document.write("<center><br> Your Answer Is <br><br><br><br><b><i><h1>", num1 - num2, "</h1></i></b></center>")
+               let result =  num1 - num2
+               document.getElementById("div").style.display = "block"
+               document.getElementById("answer").innerHTML = result;
             },
             mult: function (num1, num2) {
-                document.write("<center><br> Your Answer Is <br><br><br><br><b><i><h1>", num1 * num2, "</h1></i></b></center>")
+               let result =  num1 * num2
+               document.getElementById("div").style.display = "block"
+               document.getElementById("answer").innerHTML = result;
             },
 
             divide: function (num1, num2) {
-                document.write("<center><br> Your Answer Is <br><br><br><br><b><i><h1>", num1 / num2, "</h1></i></b></center>")
+               let result =  num1 / num2
+               document.getElementById("div").style.display = "block"
+               document.getElementById("answer").innerHTML = result;
             },
             reminder: function (num1, num2) {
-                document.write("<center><br> Your Answer Is <br><br><br><br><b><i><h1>", num1 % num2, "</h1></i></b></center>")
+               let result =  num1 % num2
+               document.getElementById("div").style.display = "block"
+               document.getElementById("answer").innerHTML = result;
             }
         }
 
